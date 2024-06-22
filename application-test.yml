@@ -1,15 +1,17 @@
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
   main:
     allow-bean-definition-overriding: true
   cloud:
     loadbalancer:
       health-check:
         enabled: true
-  datasource:
-    url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
-    username: root
-    password: 
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    
   jpa:
     properties: 
       hibernate: 
