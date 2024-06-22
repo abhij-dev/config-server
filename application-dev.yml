@@ -11,6 +11,9 @@ spring:
         ddl-auto: update
     show-sql: true
 
+  main:
+    allow-bean-definition-overriding: true
+
 eureka: 
   instanceprefer-ip-address: true
   client: 
