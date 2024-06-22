@@ -6,9 +6,3 @@ spring:
       health-check:
         enabled: true
 
-eureka:
-  fetch-registry: true
-  register-with-eureka: true
-  instance:
-    prefer-ip-address: true
-
