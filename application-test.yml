@@ -5,7 +5,6 @@ spring:
     loadbalancer:
       health-check:
         enabled: true
-
   datasource:
     url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
     username: root
@@ -18,13 +17,11 @@ spring:
         ddl-auto: update
     show-sql: true
 
-
-
-
-eureka: 
-  instanceprefer-ip-address: true
-  client: 
-    serverUrl:
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
     fetch-registry: true
     register-with-eureka: true
