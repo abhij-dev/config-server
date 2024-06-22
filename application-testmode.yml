@@ -1,7 +1,6 @@
 spring:
   main:
-    allow-bean-definition-overriding: true
-    
+    allow-bean-definition-overriding: true    
   datasource:
     url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
     username: root
