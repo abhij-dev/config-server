@@ -6,3 +6,25 @@ spring:
       health-check:
         enabled: true
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: update
+    show-sql: true
+
+
+
+
+eureka: 
+  instanceprefer-ip-address: true
+  client: 
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
