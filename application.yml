@@ -1,4 +1,9 @@
 spring:
+  application:
+    name: config-default
+
+
+spring:
   datasource:
     url: jdbc:mysql://localhost:3306/cartechpay-microservice?createDatabaseIfNotExist=true
     username: root
